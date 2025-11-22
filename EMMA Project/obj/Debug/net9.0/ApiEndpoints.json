@@ -160,13 +160,13 @@
   {
     "ContainingType": "EMMA_Project.Controllers.ReadingController",
     "Method": "GetById",
-    "RelativePath": "api/v1/Reading/{id}",
+    "RelativePath": "api/v1/Reading/{idReading}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idReading",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -176,13 +176,13 @@
   {
     "ContainingType": "EMMA_Project.Controllers.ReadingController",
     "Method": "Update",
-    "RelativePath": "api/v1/Reading/{id}",
+    "RelativePath": "api/v1/Reading/{idReading}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idReading",
         "Type": "System.Int32",
         "IsRequired": true
       },
@@ -197,13 +197,13 @@
   {
     "ContainingType": "EMMA_Project.Controllers.ReadingController",
     "Method": "Delete",
-    "RelativePath": "api/v1/Reading/{id}",
+    "RelativePath": "api/v1/Reading/{idReading}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idReading",
         "Type": "System.Int32",
         "IsRequired": true
       }

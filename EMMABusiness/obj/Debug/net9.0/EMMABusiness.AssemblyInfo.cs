@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMMABusiness")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c798b10aaf6e4d5033821d242f5b49ae027f2de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a45affeb1895c8cbce361edd60cdea540dd8b46")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMMABusiness")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMMABusiness")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

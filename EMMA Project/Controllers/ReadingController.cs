@@ -2,9 +2,6 @@
 using EMMAModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using EMMAData.Models;
-using EMMA_Project.Extensions;
-using System.Linq;
 
 namespace EMMA_Project.Controllers
 {
@@ -27,8 +24,6 @@ namespace EMMA_Project.Controllers
             pageSize = Math.Clamp(pageSize, 1, 100);
 
             var total = await _context.Readings.LongCountAsync();
-            if (total == 0) return NoContent();
-
             var totalPages = (int)Math.Ceiling(total / (double)pageSize);
 
             var items = await _context.Readings
@@ -37,10 +32,23 @@ namespace EMMA_Project.Controllers
                 .Take(pageSize)
                 .ToListAsync();
 
-            var baseUrl = $"{Request.Scheme}://{Request.Host}{Request.Path}";
-            var links = HateoasExtensions.BuildPagingLinks(baseUrl, pageNumber, pageSize, totalPages);
+            // 🔥 Correção do problema de voltar página
+            var baseUrl = $"{Request.Scheme}://{Request.Host}/api/v1/Reading";
 
-            var response = new PaginatedResponse<Reading>
+            var links = new Dictionary<string, string>
+            {
+                ["self"] = $"{baseUrl}?pageNumber={pageNumber}&pageSize={pageSize}",
+                ["first"] = $"{baseUrl}?pageNumber=1&pageSize={pageSize}",
+                ["last"] = $"{baseUrl}?pageNumber={totalPages}&pageSize={pageSize}"
+            };
+
+            if (pageNumber > 1)
+                links["prev"] = $"{baseUrl}?pageNumber={pageNumber - 1}&pageSize={pageSize}";
+
+            if (pageNumber < totalPages)
+                links["next"] = $"{baseUrl}?pageNumber={pageNumber + 1}&pageSize={pageSize}";
+
+            var response = new
             {
                 Items = items,
                 PageNumber = pageNumber,
@@ -53,15 +61,26 @@ namespace EMMA_Project.Controllers
             return Ok(response);
         }
 
-        // GET: api/v1/Reading/{id}
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        // GET: api/v1/Reading/{idReading}
+        [HttpGet("{idReading}")]
+        public async Task<IActionResult> GetById(int idReading)
         {
-            var reading = await _context.Readings.FindAsync(id);
-            if (reading == null) return NotFound(new { error = "Reading não encontrado." });
+            var reading = await _context.Readings
+                .FirstOrDefaultAsync(r => r.IdReading == idReading);
+
+            if (reading == null)
+                return NotFound(new { error = "Reading não encontrado." });
 
             var self = $"{Request.Scheme}://{Request.Host}{Request.Path}";
-            return Ok(new { reading, Links = new Dictionary<string, string> { ["self"] = self } });
+
+            return Ok(new
+            {
+                reading,
+                Links = new Dictionary<string, string>
+                {
+                    ["self"] = self
+                }
+            });
         }
 
         // POST: api/v1/Reading
@@ -72,21 +91,25 @@ namespace EMMA_Project.Controllers
                 return BadRequest(new { error = "Dados inválidos." });
 
             reading.CreationDate = DateTime.UtcNow;
+
             _context.Readings.Add(reading);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = reading.IdReading }, reading);
+            return CreatedAtAction(nameof(GetById), new { idReading = reading.IdReading }, reading);
         }
 
-        // PUT: api/v1/Reading/{id}
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Reading reading)
+        // PUT: api/v1/Reading/{idReading}
+        [HttpPut("{idReading}")]
+        public async Task<IActionResult> Update(int idReading, [FromBody] Reading reading)
         {
-            if (reading == null || id != reading.IdReading)
-                return BadRequest(new { error = "ID mismatch ou dados inválidos." });
+            if (idReading != reading.IdReading)
+                return BadRequest(new { error = "O ID da URL não corresponde ao ID do objeto." });
 
-            var existing = await _context.Readings.FindAsync(id);
-            if (existing == null) return NotFound(new { error = "Reading não encontrado." });
+            var existing = await _context.Readings
+                .FirstOrDefaultAsync(r => r.IdReading == idReading);
+
+            if (existing == null)
+                return NotFound(new { error = "Reading não encontrado." });
 
             existing.Description = reading.Description;
             existing.Humor = reading.Humor;
@@ -94,18 +117,22 @@ namespace EMMA_Project.Controllers
             _context.Entry(existing).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(existing);
         }
 
-        // DELETE: api/v1/Reading/{id}
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        // DELETE: api/v1/Reading/{idReading}
+        [HttpDelete("{idReading}")]
+        public async Task<IActionResult> Delete(int idReading)
         {
-            var reading = await _context.Readings.FindAsync(id);
-            if (reading == null) return NotFound(new { error = "Reading não encontrado." });
+            var reading = await _context.Readings
+                .FirstOrDefaultAsync(r => r.IdReading == idReading);
+
+            if (reading == null)
+                return NotFound(new { error = "Reading não encontrado." });
 
             _context.Readings.Remove(reading);
             await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }

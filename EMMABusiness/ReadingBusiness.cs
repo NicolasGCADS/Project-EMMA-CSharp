@@ -1,10 +1,9 @@
 ﻿using EMMAData;
 using EMMAModel;
-using System;
 
 namespace EMMABusiness
 {
-    public class ReadingService
+    public class ReadingService : IReadingService
     {
         private readonly AppDbContext _context;
 

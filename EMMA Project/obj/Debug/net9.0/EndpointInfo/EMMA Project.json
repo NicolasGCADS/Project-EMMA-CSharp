@@ -266,14 +266,14 @@
         }
       }
     },
-    "/api/v1/Reading/{id}": {
+    "/api/v1/Reading/{idReading}": {
       "get": {
         "tags": [
           "Reading"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "idReading",
             "in": "path",
             "required": true,
             "schema": {
@@ -294,7 +294,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "idReading",
             "in": "path",
             "required": true,
             "schema": {
@@ -334,7 +334,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "idReading",
             "in": "path",
             "required": true,
             "schema": {

@@ -10,16 +10,17 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// URLs para rodar local
-builder.WebHost.UseUrls("http://localhost:5232", "https://localhost:7006");
+// -----------------------------------------------------------------------------
+// Removido UseUrls — Docker controla a porta automaticamente
+// -----------------------------------------------------------------------------
+// builder.WebHost.UseUrls("http://localhost:5232", "https://localhost:7006");
 
 // --- JWT CONFIG ---
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var jwtKey = jwtSection["Key"];
 var jwtIssuer = jwtSection["Issuer"];
 var jwtAudience = jwtSection["Audience"];
-var jwtMinutes = int.TryParse(jwtSection["Minutes"], out var min)
-    ? min : 120;
+var jwtMinutes = int.TryParse(jwtSection["Minutes"], out var min) ? min : 120;
 
 // --- Health Checks ---
 builder.Services.AddHealthChecks();
@@ -94,9 +95,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
            .LogTo(Console.WriteLine, LogLevel.Information)
 );
 
-// --- Services EMMA ---
-builder.Services.AddScoped<PersonService>();
-builder.Services.AddScoped<ReadingService>();
+// --- Services EMMA (CORREÇÃO: registrar interfaces) ---
+builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<IReadingService, ReadingService>();
 builder.Services.AddScoped<ReviewService>();
 
 // TokenService
@@ -105,7 +106,7 @@ builder.Services.AddScoped<ITokenService>(sp =>
 
 var app = builder.Build();
 
-// --- Apply Migrations no Dev ---
+// --- Apply Migrations ---
 if (app.Environment.IsDevelopment())
 {
     using var scope = app.Services.CreateScope();
@@ -139,7 +140,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowAll");
 
-app.UseHttpsRedirection();
+// -----------------------------------------------------------------------------
+// HTTPS redirection desligado para evitar erro no Docker sem certificado SSL
+// -----------------------------------------------------------------------------
+// app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -152,5 +157,5 @@ app.MapControllers();
 
 app.Run();
 
-// Expose Program class for WebApplicationFactory in integration tests
+// Para testes integrados
 public partial class Program { }
