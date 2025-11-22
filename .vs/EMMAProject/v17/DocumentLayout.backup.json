@@ -1,0 +1,605 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\emmabusiness.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\emmabusiness.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\emma project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\emma project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmamodel\\emmamodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|solutionrelative:emmamodel\\emmamodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmaintegratedtests\\personcontrollerunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|solutionrelative:emmaintegratedtests\\personcontrollerunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmaintegratedtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|solutionrelative:emmaintegratedtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmadata\\models\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|solutionrelative:emmadata\\models\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmaintegratedtests\\emmaintegratedtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|solutionrelative:emmaintegratedtests\\emmaintegratedtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\ipersonbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\ipersonbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\readingbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\readingbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmadata\\emmadata.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|solutionrelative:emmadata\\emmadata.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmaintegratedtests\\persontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC049C0-D780-426F-917C-03D075C93172}|EMMAIntegratedTests\\EMMAIntegratedTests.csproj|solutionrelative:emmaintegratedtests\\persontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\emma project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\emma project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmamodel\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|solutionrelative:emmamodel\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\EMMA.IntegrationTests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMMA.IntegrationTests\\EMMA.IntegrationTests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmadata\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|solutionrelative:emmadata\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\PersonTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMMA.IntegrationTests\\PersonTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\ReviewTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMMA.IntegrationTests\\ReviewTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\controllers\\readingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\controllers\\readingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmadata\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{112667A7-3C17-47AA-A061-E1FC151A6E13}|EMMAData\\EMMAData.csproj|solutionrelative:emmadata\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmamodel\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|solutionrelative:emmamodel\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmamodel\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|solutionrelative:emmamodel\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmamodel\\reading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1525E4A6-11B2-4589-A3D5-BF4F442F4DFF}|EMMAModel\\EMMAModel.csproj|solutionrelative:emmamodel\\reading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\personbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\personbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\emma project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\emma project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emma project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C940F31A-CEE8-4156-B020-5F8DD30DA5D8}|EMMA Project\\EMMA Project.csproj|solutionrelative:emma project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\reviewbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\reviewbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|d:\\fiap\\projeto\\2tdspx\\global solution 2\\dotnet\\emma project\\emmabusiness\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE65B98-7F81-439B-ADAD-6B0F6349A979}|EMMABusiness\\EMMABusiness.csproj|solutionrelative:emmabusiness\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Model\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMMA Model\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\ReviewTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMMAIntegratedTests\\ReviewTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\AuthTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMMAIntegratedTests\\AuthTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonControllerUnitTests.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\PersonControllerUnitTests.cs",
+              "RelativeDocumentMoniker": "EMMAIntegratedTests\\PersonControllerUnitTests.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\PersonControllerUnitTests.cs",
+              "RelativeToolTip": "EMMAIntegratedTests\\PersonControllerUnitTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T18:53:08.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EMMAModel.csproj",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\EMMAModel.csproj",
+              "RelativeDocumentMoniker": "EMMAModel\\EMMAModel.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\EMMAModel.csproj",
+              "RelativeToolTip": "EMMAModel\\EMMAModel.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-14T21:07:14.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\ITokenService.cs",
+              "RelativeDocumentMoniker": "EMMABusiness\\ITokenService.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\ITokenService.cs",
+              "RelativeToolTip": "EMMABusiness\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:50:29.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaginatedResponse.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\Models\\PaginatedResponse.cs",
+              "RelativeDocumentMoniker": "EMMAData\\Models\\PaginatedResponse.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\Models\\PaginatedResponse.cs",
+              "RelativeToolTip": "EMMAData\\Models\\PaginatedResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:03:36.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Person.cs",
+              "RelativeDocumentMoniker": "EMMAModel\\Person.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Person.cs",
+              "RelativeToolTip": "EMMAModel\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:05:52.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EMMAIntegratedTests.csproj",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\EMMAIntegratedTests.csproj",
+              "RelativeDocumentMoniker": "EMMAIntegratedTests\\EMMAIntegratedTests.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\EMMAIntegratedTests.csproj",
+              "RelativeToolTip": "EMMAIntegratedTests\\EMMAIntegratedTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-20T02:47:23.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PersonTests.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\PersonTests.cs",
+              "RelativeDocumentMoniker": "EMMAIntegratedTests\\PersonTests.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\PersonTests.cs",
+              "RelativeToolTip": "EMMAIntegratedTests\\PersonTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T03:16:03.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EMMABusiness.csproj",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\EMMABusiness.csproj",
+              "RelativeDocumentMoniker": "EMMABusiness\\EMMABusiness.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\EMMABusiness.csproj",
+              "RelativeToolTip": "EMMABusiness\\EMMABusiness.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-15T20:40:42.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ReviewTests.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\ReviewTests.cs",
+              "RelativeDocumentMoniker": "EMMAIntegratedTests\\ReviewTests.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\ReviewTests.cs",
+              "RelativeToolTip": "EMMAIntegratedTests\\ReviewTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T03:16:20.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EMMA Project.csproj",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\EMMA Project.csproj",
+              "RelativeDocumentMoniker": "EMMA Project\\EMMA Project.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\EMMA Project.csproj",
+              "RelativeToolTip": "EMMA Project\\EMMA Project.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-17T03:38:03.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "EMMAIntegratedTests\\CustomWebApplicationFactory.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "EMMAIntegratedTests\\CustomWebApplicationFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T18:51:57.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EMMA Project.http",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\EMMA Project.http",
+              "RelativeDocumentMoniker": "EMMA Project\\EMMA Project.http",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\EMMA Project.http",
+              "RelativeToolTip": "EMMA Project\\EMMA Project.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-11-17T22:00:47.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReadingBusiness.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\ReadingBusiness.cs",
+              "RelativeDocumentMoniker": "EMMABusiness\\ReadingBusiness.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\ReadingBusiness.cs",
+              "RelativeToolTip": "EMMABusiness\\ReadingBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:46:48.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPersonBusiness.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\IPersonBusiness.cs",
+              "RelativeDocumentMoniker": "EMMABusiness\\IPersonBusiness.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\IPersonBusiness.cs",
+              "RelativeToolTip": "EMMABusiness\\IPersonBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T21:43:37.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EMMAData.csproj",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\EMMAData.csproj",
+              "RelativeDocumentMoniker": "EMMAData\\EMMAData.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\EMMAData.csproj",
+              "RelativeToolTip": "EMMAData\\EMMAData.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-15T22:23:39.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Program.cs",
+              "RelativeDocumentMoniker": "EMMA Project\\Program.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Program.cs",
+              "RelativeToolTip": "EMMA Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T03:38:05.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AuthTests.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\AuthTests.cs",
+              "RelativeDocumentMoniker": "EMMAIntegratedTests\\AuthTests.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAIntegratedTests\\AuthTests.cs",
+              "RelativeToolTip": "EMMAIntegratedTests\\AuthTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T03:15:55.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EMMA.IntegrationTests.csproj",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\EMMA.IntegrationTests.csproj",
+              "RelativeDocumentMoniker": "EMMA.IntegrationTests\\EMMA.IntegrationTests.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\EMMA.IntegrationTests.csproj",
+              "RelativeToolTip": "EMMA.IntegrationTests\\EMMA.IntegrationTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-20T01:33:56.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "EMMAData\\AppDbContextFactory.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\AppDbContextFactory.cs",
+              "RelativeToolTip": "EMMAData\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:39:54.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PersonTests.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\PersonTests.cs",
+              "RelativeDocumentMoniker": "EMMA.IntegrationTests\\PersonTests.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\PersonTests.cs",
+              "RelativeToolTip": "EMMA.IntegrationTests\\PersonTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T00:50:08.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReviewTests.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\ReviewTests.cs",
+              "RelativeDocumentMoniker": "EMMA.IntegrationTests\\ReviewTests.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA.IntegrationTests\\ReviewTests.cs",
+              "RelativeToolTip": "EMMA.IntegrationTests\\ReviewTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T00:50:16.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Review.cs",
+              "RelativeDocumentMoniker": "EMMAModel\\Review.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Review.cs",
+              "RelativeToolTip": "EMMAModel\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:13:48.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EMMA Project\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EMMA Project\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:31:58.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReadingController.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\ReadingController.cs",
+              "RelativeDocumentMoniker": "EMMA Project\\Controllers\\ReadingController.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\ReadingController.cs",
+              "RelativeToolTip": "EMMA Project\\Controllers\\ReadingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:52:37.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "EMMA Project\\Controllers\\ReviewController.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "EMMA Project\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:52:57.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EMMAData\\AppDbContext.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAData\\AppDbContext.cs",
+              "RelativeToolTip": "EMMAData\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:06:59.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T22:51:17.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Reading.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Reading.cs",
+              "RelativeDocumentMoniker": "EMMAModel\\Reading.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Reading.cs",
+              "RelativeToolTip": "EMMAModel\\Reading.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:14:42.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Role.cs",
+              "RelativeDocumentMoniker": "EMMAModel\\Role.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMAModel\\Role.cs",
+              "RelativeToolTip": "EMMAModel\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:11:14.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "EMMA Project\\Controllers\\PersonController.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "EMMA Project\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:52:15.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PersonBusiness.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\PersonBusiness.cs",
+              "RelativeDocumentMoniker": "EMMABusiness\\PersonBusiness.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\PersonBusiness.cs",
+              "RelativeToolTip": "EMMABusiness\\PersonBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T22:01:25.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ReviewBusiness.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\ReviewBusiness.cs",
+              "RelativeDocumentMoniker": "EMMABusiness\\ReviewBusiness.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\ReviewBusiness.cs",
+              "RelativeToolTip": "EMMABusiness\\ReviewBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:49:46.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EMMA Project",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\EMMA Project.csproj",
+              "RelativeDocumentMoniker": "EMMA Project\\EMMA Project.csproj",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\EMMA Project.csproj",
+              "RelativeToolTip": "EMMA Project\\EMMA Project.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-17T22:04:37.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EMMA Project\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Project\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EMMA Project\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T22:04:41.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\TokenService.cs",
+              "RelativeDocumentMoniker": "EMMABusiness\\TokenService.cs",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMABusiness\\TokenService.cs",
+              "RelativeToolTip": "EMMABusiness\\TokenService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAIBZwAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:50:14.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": ".filenesting.json",
+              "DocumentMoniker": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Model\\.filenesting.json",
+              "RelativeDocumentMoniker": "EMMA Model\\.filenesting.json",
+              "ToolTip": "D:\\Fiap\\Projeto\\2TDSPX\\Global Solution 2\\DotNet\\EMMA Project\\EMMA Model\\.filenesting.json",
+              "RelativeToolTip": "EMMA Model\\.filenesting.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-12T21:58:59.745Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

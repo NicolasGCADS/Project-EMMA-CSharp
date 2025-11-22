@@ -1,0 +1,10 @@
+﻿namespace EMMAModel
+{
+    public class Reading
+    {
+        public int IdReading { get; set; }
+        public DateTime CreationDate { get; set; }
+        public string Description { get; set; }
+        public string Humor { get; set; }
+    }
+}

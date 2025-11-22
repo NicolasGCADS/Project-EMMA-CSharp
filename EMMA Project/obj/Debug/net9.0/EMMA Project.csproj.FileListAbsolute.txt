@@ -1,0 +1,82 @@
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\appsettings.Development.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\appsettings.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMA Project.staticwebassets.endpoints.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMA Project.exe
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMA Project.deps.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMA Project.runtimeconfig.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMA Project.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMA Project.pdb
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Azure.Core.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Azure.Identity.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Oracle.EntityFrameworkCore.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Oracle.ManagedDataAccess.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.ClientModel.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.Diagnostics.PerformanceCounter.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.DirectoryServices.Protocols.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.Memory.Data.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMABusiness.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMAData.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMAModel.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMABusiness.pdb
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMAData.pdb
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\bin\Debug\net9.0\EMMAModel.pdb
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.csproj.AssemblyReference.cache
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.AssemblyInfoInputs.cache
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.AssemblyInfo.cs
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.csproj.CoreCompileInputs.cache
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.MvcApplicationPartsAssemblyInfo.cs
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.MvcApplicationPartsAssemblyInfo.cache
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.sourcelink.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\scopedcss\bundle\EMMA Project.styles.css
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\staticwebassets.build.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\staticwebassets.development.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Pro.EDBA15BD.Up2Date
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\refint\EMMA Project.dll
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.pdb
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\EMMA Project.genruntimeconfig.cache
+D:\Fiap\Projeto\2TDSPX\Global Solution 2\DotNet\EMMA Project\EMMA Project\obj\Debug\net9.0\ref\EMMA Project.dll

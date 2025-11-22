@@ -1,0 +1,49 @@
+using System.Net;
+using System.Net.Http.Json;
+using Xunit;
+using FluentAssertions;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using EMMAData;
+using EMMAModel;
+using System.Linq;
+
+namespace EMMA.IntegrationTests
+{
+    public class PersonCrudTests : IClassFixture<CustomWebApplicationFactory>
+    {
+        private readonly HttpClient _client;
+
+        public PersonCrudTests(CustomWebApplicationFactory factory)
+        {
+            _client = factory.CreateClient();
+        }
+
+        [Fact]
+        public async Task Create_Get_Update_Delete_Person_Workflow()
+        {
+            var person = new Person { Name = "PTest", Email = "ptest@example.com", Password = "pwd" };
+
+            // Create
+            var createResp = await _client.PostAsJsonAsync("/api/v1/Person", person);
+            createResp.StatusCode.Should().Be(HttpStatusCode.Created);
+            var created = await createResp.Content.ReadFromJsonAsync<Person>();
+            created.Should().NotBeNull();
+
+            // Get
+            var getResp = await _client.GetAsync($"/api/v1/Person/{created.IdPerson}");
+            getResp.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            // Update
+            created.Name = "PTest Updated";
+            var putResp = await _client.PutAsJsonAsync($"/api/v1/Person/{created.IdPerson}", created);
+            putResp.StatusCode.Should().Be(HttpStatusCode.NoContent);
+
+            // Delete
+            var delResp = await _client.DeleteAsync($"/api/v1/Person/{created.IdPerson}");
+            delResp.StatusCode.Should().Be(HttpStatusCode.NoContent);
+        }
+    }
+}

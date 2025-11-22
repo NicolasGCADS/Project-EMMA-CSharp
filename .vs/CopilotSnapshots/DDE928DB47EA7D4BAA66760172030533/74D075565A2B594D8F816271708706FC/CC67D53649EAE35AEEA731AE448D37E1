@@ -1,0 +1,119 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using EMMAData;
+using EMMAModel;
+using Microsoft.EntityFrameworkCore;
+using EMMABusiness;
+using System.Linq;
+
+namespace EMMA_Project.Controllers
+{
+    [ApiController]
+    [Route("api/v1/[controller]")]
+    public class PersonController : ControllerBase
+    {
+        private readonly IPersonService _personService;
+
+        public PersonController(IPersonService personService)
+        {
+            _personService = personService;
+        }
+
+        // GET api/v1/Person?pageNumber=1&pageSize=10
+        [HttpGet]
+        public IActionResult GetAll([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {
+            pageNumber = System.Math.Max(1, pageNumber);
+            pageSize = System.Math.Clamp(pageSize, 1, 100);
+
+            var all = _personService.ListAll();
+            if (all == null || all.Count == 0) return NoContent();
+
+            var total = all.Count;
+            var totalPages = (int)System.Math.Ceiling(total / (double)pageSize);
+
+            var items = all.OrderBy(p => p.IdPerson)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .Select(p => new { p.IdPerson, p.Name, p.Email, p.Role })
+                .ToList();
+
+            var baseUrl = $"{Request.Scheme}://{Request.Host}{Request.Path}";
+            var links = new Dictionary<string, string>
+            {
+                ["self"] = $"{baseUrl}?pageNumber={pageNumber}&pageSize={pageSize}",
+                ["first"] = $"{baseUrl}?pageNumber=1&pageSize={pageSize}",
+                ["last"] = $"{baseUrl}?pageNumber={totalPages}&pageSize={pageSize}"
+            };
+            if (pageNumber > 1) links["prev"] = $"{baseUrl}?pageNumber={pageNumber - 1}&pageSize={pageSize}";
+            if (pageNumber < totalPages) links["next"] = $"{baseUrl}?pageNumber={pageNumber + 1}&pageSize={pageSize}";
+
+            var response = new
+            {
+                Items = items,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalItems = total,
+                TotalPages = totalPages,
+                Links = links
+            };
+
+            return Ok(response);
+        }
+
+        // GET api/v1/Person/1
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var person = _personService.GetById(id);
+            if (person == null) return NotFound(new { error = "Person não encontrado." });
+
+            var self = $"{Request.Scheme}://{Request.Host}{Request.Path}";
+            return Ok(new { person = new { person.IdPerson, person.Name, person.Email, person.Role }, Links = new Dictionary<string, string> { ["self"] = self } });
+        }
+
+        // POST api/v1/Person
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] Person p)
+        {
+            if (p == null || string.IsNullOrWhiteSpace(p.Email) || string.IsNullOrWhiteSpace(p.Password))
+                return BadRequest(new { error = "Dados inválidos." });
+
+            // check email uniqueness via service
+            var exists = await _personService.GetByEmailAsync(p.Email);
+            if (exists != null) return Conflict(new { error = "Usuário já existe com este e-mail." });
+
+            var created = _personService.Create(p);
+
+            return CreatedAtAction(nameof(GetById), new { id = created.IdPerson }, new { created.IdPerson, created.Name, created.Email, created.Role });
+        }
+
+        // PUT api/v1/Person/1
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] Person p)
+        {
+            if (id != p.IdPerson) return BadRequest(new { error = "ID mismatch." });
+
+            var db = _personService.GetById(id);
+            if (db == null) return NotFound(new { error = "Person não encontrado." });
+
+            db.Name = p.Name;
+            db.Email = p.Email;
+            db.Password = p.Password;
+            db.Role = p.Role;
+
+            var updated = _personService.Update(db);
+            return updated ? NoContent() : StatusCode(500);
+        }
+
+        // DELETE api/v1/Person/1
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var db = _personService.GetById(id);
+            if (db == null) return NotFound(new { error = "Person não encontrado." });
+
+            var deleted = _personService.Delete(id);
+            return deleted ? NoContent() : StatusCode(500);
+        }
+    }
+}

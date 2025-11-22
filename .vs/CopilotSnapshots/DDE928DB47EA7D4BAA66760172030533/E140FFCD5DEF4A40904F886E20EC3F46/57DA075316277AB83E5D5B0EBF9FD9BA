@@ -1,0 +1,61 @@
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
+using EMMABusiness;
+using EMMAModel;
+using EMMA_Project.Controllers;
+using Xunit;
+
+namespace EMMAIntegratedTests
+{
+    public class PersonControllerTests
+    {
+        [Fact]
+        public void Get_WhenNoUsers_ReturnsNoContent()
+        {
+            var mockService = new Mock<IPersonService>();
+            mockService.Setup(s => s.ListAll()).Returns(new List<Person>());
+
+            var controller = new PersonController(mockService.Object);
+
+            var result = controller.GetAll();
+
+            Assert.IsType<NoContentResult>(result);
+        }
+
+        [Fact]
+        public void GetById_WhenNotFound_ReturnsNotFound()
+        {
+            var mockService = new Mock<IPersonService>();
+            mockService.Setup(s => s.GetById(It.IsAny<int>())).Returns((Person?)null);
+
+            var controller = new PersonController(mockService.Object);
+
+            var result = controller.GetById(123);
+
+            // controller returns NotFound(new { ... }) so the result is NotFoundObjectResult
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
+
+        [Fact]
+        public async System.Threading.Tasks.Task Post_WhenValid_ReturnsCreatedAtAction()
+        {
+            var input = new Person { Name = "Teste", Email = "teste@local", Password = "1234", Role = "User" };
+            var created = new Person { IdPerson = 42, Name = input.Name, Email = input.Email, Password = input.Password, Role = input.Role };
+
+            var mockService = new Mock<IPersonService>();
+            mockService.Setup(s => s.GetByEmailAsync(It.IsAny<string>())).ReturnsAsync((Person?)null);
+            mockService.Setup(s => s.Create(It.IsAny<Person>())).Returns(created);
+
+            var controller = new PersonController(mockService.Object);
+
+            var actionResult = await controller.Create(input) as CreatedAtActionResult;
+
+            Assert.NotNull(actionResult);
+            Assert.Equal(nameof(PersonController.GetById), actionResult.ActionName);
+            var value = actionResult.Value as dynamic;
+            Assert.NotNull(value);
+            Assert.Equal(42, (int)value.IdPerson);
+        }
+    }
+}

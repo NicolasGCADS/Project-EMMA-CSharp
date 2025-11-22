@@ -1,0 +1,104 @@
+﻿using EMMABusiness;
+using EMMAModel;
+using Microsoft.AspNetCore.Mvc;
+using EMMAData.Models;
+using EMMA_Project.Extensions;
+using System.Linq;
+
+namespace EMMA_Project.Controllers
+{
+    [ApiController]
+    [Route("api/v1/[controller]")]
+    public class ReadingController : ControllerBase
+    {
+        private readonly IReadingService _readingService;
+
+        public ReadingController(IReadingService readingService)
+        {
+            _readingService = readingService;
+        }
+
+        // GET: api/v1/Reading?pageNumber=1&pageSize=10
+        [HttpGet]
+        public IActionResult GetAll([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {
+            pageNumber = System.Math.Max(1, pageNumber);
+            pageSize = System.Math.Clamp(pageSize, 1, 100);
+
+            var all = _readingService.ListarTodos();
+            if (all == null || all.Count == 0) return NoContent();
+
+            var total = all.Count;
+            var totalPages = (int)System.Math.Ceiling(total / (double)pageSize);
+
+            var items = all.OrderBy(r => r.IdReading)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var baseUrl = $"{Request.Scheme}://{Request.Host}{Request.Path}";
+            var links = HateoasExtensions.BuildPagingLinks(baseUrl, pageNumber, pageSize, totalPages);
+
+            var response = new PaginatedResponse<Reading>
+            {
+                Items = items,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalItems = total,
+                TotalPages = totalPages,
+                Links = links
+            };
+
+            return Ok(response);
+        }
+
+        // GET: api/v1/Reading/{id}
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var reading = _readingService.ObterPorId(id);
+            if (reading == null) return NotFound(new { error = "Reading não encontrado." });
+
+            var self = $"{Request.Scheme}://{Request.Host}{Request.Path}";
+            return Ok(new { reading, Links = new Dictionary<string, string> { ["self"] = self } });
+        }
+
+        // POST: api/v1/Reading
+        [HttpPost]
+        public IActionResult Create([FromBody] Reading reading)
+        {
+            if (reading == null || string.IsNullOrWhiteSpace(reading.Description) || string.IsNullOrWhiteSpace(reading.Humor))
+                return BadRequest(new { error = "Dados inválidos." });
+
+            reading.CreationDate = System.DateTime.UtcNow;
+            var created = _readingService.Criar(reading);
+
+            return CreatedAtAction(nameof(GetById), new { id = created.IdReading }, created);
+        }
+
+        // PUT: api/v1/Reading/{id}
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] Reading reading)
+        {
+            if (reading == null || id != reading.IdReading)
+                return BadRequest(new { error = "ID mismatch ou dados inválidos." });
+
+            var existing = _readingService.ObterPorId(id);
+            if (existing == null) return NotFound(new { error = "Reading não encontrado." });
+
+            var success = _readingService.Atualizar(reading);
+            return success ? NoContent() : StatusCode(500);
+        }
+
+        // DELETE: api/v1/Reading/{id}
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var reading = _readingService.ObterPorId(id);
+            if (reading == null) return NotFound(new { error = "Reading não encontrado." });
+
+            var success = _readingService.Remover(id);
+            return success ? NoContent() : StatusCode(500);
+        }
+    }
+}

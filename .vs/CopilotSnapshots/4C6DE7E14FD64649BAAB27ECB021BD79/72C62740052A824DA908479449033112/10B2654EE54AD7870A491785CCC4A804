@@ -1,0 +1,8 @@
+﻿namespace EMMAModel
+{
+    public class Review
+    {
+        public int IdReading { get; set; }
+        public string Description { get; set; }
+    }
+}

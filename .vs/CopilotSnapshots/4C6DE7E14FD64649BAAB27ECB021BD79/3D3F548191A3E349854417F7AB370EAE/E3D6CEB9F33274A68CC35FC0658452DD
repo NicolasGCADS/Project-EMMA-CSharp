@@ -1,0 +1,154 @@
+﻿using EMMAData;
+using EMMABusiness;
+using EMMAModel;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// URLs para rodar local
+builder.WebHost.UseUrls("http://localhost:5232", "https://localhost:7006");
+
+// JWT Config
+var jwtSection = builder.Configuration.GetSection("Jwt");
+var jwtKey = jwtSection["Key"];
+var jwtIssuer = jwtSection["Issuer"];
+var jwtAudience = jwtSection["Audience"];
+var jwtMinutes = int.TryParse(jwtSection["Minutes"], out var min) ? min : 120;
+
+// Health Checks
+builder.Services.AddHealthChecks();
+
+// Auth JWT
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtIssuer,
+            ValidAudience = jwtAudience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey!))
+        };
+    });
+
+// CORS liberado
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+// Controllers
+builder.Services.AddControllers();
+
+// Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "API EMMA",
+        Version = "v1",
+        Description = "Documentação da API EMMA"
+    });
+
+    var jwtScheme = new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Digite o token JWT no formato: Bearer {seu_token}",
+        Reference = new OpenApiReference
+        {
+            Type = ReferenceType.SecurityScheme,
+            Id = "Bearer"
+        }
+    };
+
+    c.AddSecurityDefinition("Bearer", jwtScheme);
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { jwtScheme, Array.Empty<string>() }
+    });
+});
+
+// Database (Oracle) - habilitar logging das queries para diagnosticar ORA-00904
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .EnableSensitiveDataLogging()
+           .LogTo(Console.WriteLine, LogLevel.Information));
+
+// Serviços EMMA
+builder.Services.AddScoped<PersonService>();
+builder.Services.AddScoped<ReadingService>();
+builder.Services.AddScoped<ReviewService>();
+
+// Se quiser interfaces, posso criar também:
+// builder.Services.AddScoped<IPersonService, PersonService>();
+
+// Token Service (caso você use)
+builder.Services.AddScoped<ITokenService>(sp =>
+    new TokenService(jwtKey!, jwtIssuer!, jwtAudience!, jwtMinutes));
+
+var app = builder.Build();
+
+// Migrations automáticas no DEV
+if (app.Environment.IsDevelopment())
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    try
+    {
+        var db = services.GetRequiredService<AppDbContext>();
+        db.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        var loggerFactory = services.GetService<ILoggerFactory>();
+        loggerFactory?.CreateLogger("Program")
+            .LogError(ex, "Failed to apply database migrations or seed data.");
+    }
+}
+
+// Swagger
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API EMMA v1");
+    c.RoutePrefix = "swagger";
+});
+
+// DEV exception page
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.UseCors("AllowAll");
+
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+
+// Health Checks
+app.MapHealthChecks("/health");
+app.MapHealthChecks("/health/ready");
+
+// Controllers
+app.MapControllers();
+
+app.Run();
