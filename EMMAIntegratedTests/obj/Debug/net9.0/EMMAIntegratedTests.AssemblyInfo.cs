@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMMAIntegratedTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a45affeb1895c8cbce361edd60cdea540dd8b46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+640dc3ef997d4a876cc72ec059ff2542496096fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMMAIntegratedTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMMAIntegratedTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,10 +11,10 @@ namespace EMMA_Project.Controllers
     [Route("api/v1/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly IPersonService _personService;
+        private readonly PersonService _personService;
         private readonly ITokenService _tokenService;
 
-        public AuthController(IPersonService personService, ITokenService tokenService)
+        public AuthController(PersonService personService, ITokenService tokenService)
         {
             _personService = personService;
             _tokenService = tokenService;
