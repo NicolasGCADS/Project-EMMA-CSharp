@@ -73,6 +73,128 @@ API REST desenvolvida em ASP.NET Core para gerenciar leituras, pessoas e reviews
 
 ---
 
+## Exemplos 
+
+```json
+### 🟢 GET - Listar todas as leituras (paginado)
+GET {{baseUrl}}/api/v1/Reading?pageNumber=1&pageSize=10
+Accept: application/json
+
+### 🔵 POST - Criar nova leitura
+POST {{baseUrl}}/api/v1/Reading
+Content-Type: application/json
+
+{
+  "idReading": 1,
+  "description": "Leitura inicial",
+  "humor": "Feliz"
+}
+### 🟡 GET - Obter leitura por ID
+GET {{baseUrl}}/api/v1/Reading/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar leitura por ID
+PUT {{baseUrl}}/api/v1/Reading/1
+Content-Type: application/json
+
+{
+  "idReading": 1,
+  "description": "Leitura atualizada",
+  "humor": "neutro"
+}
+
+### 🔴 DELETE - Remover leitura por ID
+DELETE {{baseUrl}}/api/v1/Reading/1
+Accept: application/json
+
+
+### PERSON
+
+### 🟢 GET - Listar todas as pessoas
+GET {{baseUrl}}/api/v1/Person
+Accept: application/json
+
+### 🔵 POST - Criar nova pessoa
+POST {{baseUrl}}/api/v1/Person
+Content-Type: application/json
+
+{
+  "idPerson": 1,
+  "name": "Leo",
+  "email": "leonardo@email.com",
+  "password": "123456",
+  "role": "Admin"
+}
+
+### 🟡 GET - Obter pessoa por ID
+GET {{baseUrl}}/api/v1/Person/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar pessoa por ID
+PUT {{baseUrl}}/api/v1/Person/1
+Content-Type: application/json
+
+{
+  "idPerson": 1,
+  "name": "Leonardo",
+  "email": "leonardo@email.com",
+  "password": "654321",
+  "role": "Admin"
+}
+
+### 🔴 DELETE - Remover pessoa por ID
+DELETE {{baseUrl}}/api/v1/Person/1
+Accept: application/json
+
+
+### REVIEW
+
+### 🟢 GET - Listar todas as reviews
+GET {{baseUrl}}/api/v1/Review
+Accept: application/json
+
+### 🔵 POST - Criar nova review
+POST {{baseUrl}}/api/v1/Review
+Content-Type: application/json
+
+{
+  "idReview": 1,
+  "idReading": 1,
+  "description": "Estou feliz"
+}
+
+### 🟡 GET - Obter review por ID
+GET {{baseUrl}}/api/v1/Review/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar review por ID
+PUT {{baseUrl}}/api/v1/Review/1
+Content-Type: application/json
+
+{
+  "idReview": 1,
+  "idReading": 1,
+  "description": "Estou triste"
+}
+
+### 🔴 DELETE - Remover review por ID
+DELETE {{baseUrl}}/api/v1/Review/1
+Accept: application/json
+
+### AUTH (LOGIN)
+
+### 🔐 POST - Login (gerar token JWT)
+POST {{baseUrl}}/api/v1/Auth/login
+Content-Type: application/json
+
+{
+  "email": "leonardo@email.com",
+  "password": "123456"
+}
+```
+
+---
+
 ## Configuração do banco (`appsettings.json`)
 
 Edite `appsettings.json` e configure a cadeia de conexão em `ConnectionStrings:DefaultConnection`:
